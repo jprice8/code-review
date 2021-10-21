@@ -1,6 +1,8 @@
 import React, { useState } from "react"
+
 import BSTControl from "../../components/dataStructures/bst/BSTControl"
 import BSTGraph from "../../components/dataStructures/bst/BSTGraph"
+import Layout from "../../components/Layout"
 
 class Node {
   constructor(value) {
