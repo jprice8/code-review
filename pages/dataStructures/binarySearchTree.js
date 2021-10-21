@@ -111,7 +111,7 @@ const BinarySearchTree = () => {
   return (
     <Layout>
       <div className="bg-white p-10 rounded-lg">
-        <section class="pb-8 border-b border-gray-200">
+        <section className="pb-8 border-b border-gray-200">
           <h3 className="text-3xl leading-6 font-medium text-gray-900">
             Binary Search Tree
           </h3>
