@@ -118,7 +118,7 @@ const BinarySearchTree = () => {
           <div className="mt-4 max-w-4xl text-sm text-gray-500">
             <p className="mt-8">
               A binary search tree (BST) is a data structure whose internal
-              nodes each store a key greater than all the keys in the node's
+              nodes each store a key greater than all the keys in the node&apos;s
               left subtree and less than those in its right subtree.
             </p>
 
