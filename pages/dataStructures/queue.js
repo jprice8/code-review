@@ -46,8 +46,9 @@ const Queue = () => {
           <div className="max-w-4xl text-sm text-gray-500">
             <p className="mt-6">
               A queue is a collection of entities that can be modified by the
-              addition of an entity to the "back" of the sequence or the removal
-              of an entity from the "front" of the sequence.
+              addition of an entity to the &quot;back&quot; of the sequence or
+              the removal of an entity from the &quot;front&quot; of the
+              sequence.
             </p>
 
             <p className="mt-4">The queue has two main operations:</p>

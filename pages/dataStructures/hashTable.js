@@ -37,7 +37,7 @@ const HashTable = () => {
 
           <p className="mt-4">
             When the hash function attempts to place a value at
-            an index that already exist, it is called a "collision".
+            an index that already exist, it is called a &quot;collision&quot;.
             There are two main ways to handle collisions, I am using
             separate chaining in my example. The chain is implemented as
             a linked list of records. 
