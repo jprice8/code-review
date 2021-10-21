@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Layout from "../../components/layout"
+import Layout from "../../components/Layout"
 
 import QueueControl from "../../components/dataStructures/queue/QueueControl"
 import QueueGrid from "../../components/dataStructures/queue/QueueGrid"

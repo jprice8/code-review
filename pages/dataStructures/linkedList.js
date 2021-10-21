@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import Layout from "../../components/layout"
+import Layout from '../../components/Layout'
 import LinkedListGrid from "../../components/dataStructures/linkedList/LinkedListGrid"
 import LinkedListControl from "../../components/dataStructures/linkedList/LinkedListControl"
 

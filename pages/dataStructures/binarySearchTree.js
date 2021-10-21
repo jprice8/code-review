@@ -1,7 +1,4 @@
 import React, { useState } from "react"
-import Layout from "../../components/layout"
-
-import { useBinarySearchTree } from "../../hooks/useBinarySearchTree"
 import BSTControl from "../../components/dataStructures/bst/BSTControl"
 import BSTGraph from "../../components/dataStructures/bst/BSTGraph"
 
@@ -17,8 +14,6 @@ const BinarySearchTree = () => {
   const [insertValue, setInsertValue] = useState("")
   const [data, setData] = useState({ root: null })
   const [verify, setVerify] = useState(false)
-  const [text, setText] = useState("")
-  const array = []
 
   const handleInsertClick = (e) => {
     e.preventDefault()

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import StackControl from "../../components/dataStructures/stack/StackControl"
 import StackGrid from "../../components/dataStructures/stack/StackGrid"
-import Layout from "../../components/layout"
+import Layout from "../../components/Layout"
 import { useStack } from "../../hooks/useStack"
 
 const Stack = () => {
