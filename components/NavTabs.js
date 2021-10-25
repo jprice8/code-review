@@ -37,19 +37,9 @@ export default function NavTabs() {
     ],
     Algorithms: [
       {
-        id: 10,
-        title: "Merge Sort",
-        href: "/algorithms/mergeSort",
-      },
-      {
-        id: 11,
-        title: "Quick Sort",
-        href: "/algorithms/quickSort",
-      },
-      {
-        id: 12,
-        title: "Binary Search",
-        href: "/algorithms/binarySearch",
+        id: 6,
+        title: "Sorting",
+        href: "/algorithms/sorting",
       },
     ],
   })
