@@ -16,7 +16,7 @@ const LinkedListGrid = ({ data, found }) => {
   }
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap bg-white p-10 rounded-lg shadow-md">
       <LinkCell value="Head" />
       {data.map((unit, idx) => (
         isFound(unit, idx)

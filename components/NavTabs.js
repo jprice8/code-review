@@ -10,11 +10,6 @@ export default function NavTabs() {
   let [categories] = useState({
     DataStructures: [
       {
-        id: 1,
-        title: "Hash Table",
-        href: "/dataStructures/hashTable",
-      },
-      {
         id: 2,
         title: "Linked List",
         href: "/dataStructures/linkedList",
@@ -47,17 +42,17 @@ export default function NavTabs() {
   return (
     <div className="max-w-md mx-auto px-2 py-16 sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex p-1 space-x-1 bg-blue-900 bg-opacity-20 rounded-xl">
+        <Tab.List className="flex p-1 space-x-1 bg-primary-900 bg-opacity-20 rounded-xl">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full py-2.5 text-sm leading-5 font-medium text-blue-700 rounded-lg",
-                  "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-60",
+                  "w-full py-2.5 text-sm leading-5 font-medium text-primary-700 rounded-lg",
+                  "focus:outline-none focus:ring-2 ring-offset-2 ring-offset-primary-400 ring-white ring-opacity-60",
                   selected
                     ? "bg-white shadow"
-                    : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                    : "text-primary-100 hover:text-white"
                 )
               }
             >

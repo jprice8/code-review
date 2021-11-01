@@ -16,9 +16,9 @@ const LinkCell = ({ value, prev, highlight }) => {
           <div className="pl-4 border-l-2 border-yellow-400" />
         </div>
       ) : (
-        <div id="block" className="border-2 border-indigo-800 flex">
+        <div id="block" className="border-2 border-primary-800 flex">
           <div className="pr-2 my-2 mx-4">{value}</div>
-          <div className="pl-4 border-l-2 border-indigo-800" />
+          <div className="pl-4 border-l-2 border-primary-800" />
         </div>
       )}
     </div>

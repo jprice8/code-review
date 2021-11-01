@@ -51,7 +51,7 @@ const SortingControl = (props) => {
             <select
               id="algorithm"
               name="algorithm"
-              className="mt-2 block w-full border py-2 pl-3 pr-10 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+              className="mt-2 block w-full border py-2 pl-3 pr-10 border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 sm:text-sm rounded-md"
               onChange={props.handleAlgoClick}
               disabled={props.sorting}
               value={props.algo}

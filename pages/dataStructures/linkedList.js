@@ -10,34 +10,30 @@ const LinkedList = () => {
   const { append, remove, flatten, find, clear } = useLinkedList()
   const flatLinky = flatten()
 
-  const [appendValue, setAppendValue] = useState("")
-  const [deleteValue, setDeleteValue] = useState("")
-  const [findValue, setFindValue] = useState("")
+  const [inputValue, setInputValue] = useState("")
   const [found, setFound] = useState(false)
 
   const handleAppendClick = (e) => {
     e.preventDefault()
-    append(appendValue)
+    append(inputValue)
     // Reset append value and turn find off
-    setAppendValue("")
+    setInputValue("")
     setFound(false)
   }
 
   const handleDeleteClick = (e) => {
     e.preventDefault()
-    remove(deleteValue)
+    remove(inputValue)
     // Reset delete value and turn find off
-    setDeleteValue("")
+    setInputValue("")
     setFound(false)
   }
 
   const handleFindClick = (e) => {
     e.preventDefault()
-    const tmpFound = find(findValue)
-    console.log(`tmpFound is result of find hook: ${tmpFound}`)
+    const tmpFound = find(inputValue)
     setFound(tmpFound)
-    console.log(`found state var: ${found}`)
-    setFindValue("")
+    setInputValue("")
   }
 
   const handleClearClick = (e) => {
@@ -47,7 +43,7 @@ const LinkedList = () => {
 
   return (
     <Layout>
-      <div className="bg-white p-10 rounded-lg">
+      <div className="bg-white p-10 rounded-lg shadow-md">
         <section className="pb-8 border-b border-gray-200">
           <h3 className="text-3xl leading-6 font-medium text-gray-900">
             Linked List
@@ -63,19 +59,15 @@ const LinkedList = () => {
         </section>
         <section className="pt-4">
           <LinkedListControl
-            appendValue={appendValue}
-            appendInputTitle="Append O(1)"
-            setAppendValue={setAppendValue}
+            inputValue={inputValue}
+            setInputValue={setInputValue}
             handleAppendClick={handleAppendClick}
-            deleteValue={deleteValue}
-            deleteInputTitle="Delete O(n)"
-            setDeleteValue={setDeleteValue}
             handleDeleteClick={handleDeleteClick}
-            findValue={findValue}
-            findInputTitle="Find O(n)"
-            setFindValue={setFindValue}
             handleFindClick={handleFindClick}
             handleClearClick={handleClearClick}
+            appendInputTitle="Append O(1)"
+            deleteInputTitle="Delete O(n)"
+            findInputTitle="Find O(n)"
           />
         </section>
       </div>

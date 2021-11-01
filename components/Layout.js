@@ -1,12 +1,11 @@
 import React from "react"
 import Head from "next/head"
 
-import Follow from "./Follow"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-gradient-to-r from-blue-400 h-screen flex flex-col justify-between overflow-y-auto pb-10">
+    <div className="bg-gradient-to-b from-blue-400 h-screen flex flex-col justify-between overflow-y-auto pb-10">
       <Head>
         <title>Code Review</title>
         <meta
